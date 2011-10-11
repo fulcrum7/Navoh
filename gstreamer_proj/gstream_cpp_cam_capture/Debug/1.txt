@@ -1,0 +1,741 @@
+In file included from /usr/include/gtkmm-2.4/gtkmm/widget.h:6,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/lib/gtkmm-2.4/include/gtkmmconfig.h:5:25: warning: gdkmmconfig.h: No such file or directory
+In file included from /usr/include/gtkmm-2.4/gtkmm/widget.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/pangomm-1.4/pangomm/context.h:42:29: warning: cairomm/context.h: No such file or directory
+/usr/include/pangomm-1.4/pangomm/context.h:43:33: warning: cairomm/fontoptions.h: No such file or directory
+In file included from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/widget.h:37:25: warning: gdkmm/event.h: No such file or directory
+/usr/include/gtkmm-2.4/gtkmm/widget.h:38:25: warning: gdkmm/types.h: No such file or directory
+/usr/include/gtkmm-2.4/gtkmm/widget.h:39:26: warning: gdkmm/window.h: No such file or directory
+/usr/include/gtkmm-2.4/gtkmm/widget.h:40:31: warning: gdkmm/dragcontext.h: No such file or directory
+/usr/include/gtkmm-2.4/gtkmm/widget.h:41:26: warning: gdkmm/pixbuf.h: No such file or directory
+/usr/include/gtkmm-2.4/gtkmm/widget.h:42:26: warning: gdkmm/screen.h: No such file or directory
+/usr/include/gtkmm-2.4/gtkmm/widget.h:44:27: warning: gdkmm/display.h: No such file or directory
+In file included from /usr/include/gtkmm-2.4/gtkmm/rc.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/widget.h:47,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/style.h:37:22: warning: gdkmm/gc.h: No such file or directory
+/usr/include/gtkmm-2.4/gtkmm/style.h:38:26: warning: gdkmm/pixmap.h: No such file or directory
+In file included from /usr/include/gtkmm-2.4/gtkmm/widget.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/pangomm-1.4/pangomm/context.h:424: error: ISO C++ forbids declaration of ‘Cairo’ with no type
+/usr/include/pangomm-1.4/pangomm/context.h:424: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/pangomm-1.4/pangomm/context.h:436: error: ISO C++ forbids declaration of ‘Cairo’ with no type
+/usr/include/pangomm-1.4/pangomm/context.h:436: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/pangomm-1.4/pangomm/context.h:449: error: ‘Cairo’ has not been declared
+/usr/include/pangomm-1.4/pangomm/context.h:449: error: ISO C++ forbids declaration of ‘FontOptions’ with no type
+/usr/include/pangomm-1.4/pangomm/context.h:449: error: expected ‘;’ before ‘get_font_options’
+In file included from /usr/include/pangomm-1.4/pangomm/layout.h:38,
+                 from /usr/include/gtkmm-2.4/gtkmm/widget.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/pangomm-1.4/pangomm/layoutline.h:180: error: ISO C++ forbids declaration of ‘Cairo’ with no type
+/usr/include/pangomm-1.4/pangomm/layoutline.h:180: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/pangomm-1.4/pangomm/layoutline.h:188: error: ISO C++ forbids declaration of ‘Cairo’ with no type
+/usr/include/pangomm-1.4/pangomm/layoutline.h:188: error: expected ‘,’ or ‘...’ before ‘::’ token
+In file included from /usr/include/gtkmm-2.4/gtkmm/widget.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/pangomm-1.4/pangomm/layout.h:229: error: ISO C++ forbids declaration of ‘Cairo’ with no type
+/usr/include/pangomm-1.4/pangomm/layout.h:229: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/pangomm-1.4/pangomm/layout.h:237: error: ISO C++ forbids declaration of ‘Cairo’ with no type
+/usr/include/pangomm-1.4/pangomm/layout.h:237: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/pangomm-1.4/pangomm/layout.h:853: error: ISO C++ forbids declaration of ‘Cairo’ with no type
+/usr/include/pangomm-1.4/pangomm/layout.h:853: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/pangomm-1.4/pangomm/layout.h:863: error: ISO C++ forbids declaration of ‘Cairo’ with no type
+/usr/include/pangomm-1.4/pangomm/layout.h:863: error: expected ‘,’ or ‘...’ before ‘::’ token
+In file included from /usr/include/gtkmm-2.4/gtkmm/style.h:44,
+                 from /usr/include/gtkmm-2.4/gtkmm/rc.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/widget.h:47,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/iconsource.h:90: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/iconsource.h:90: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/iconsource.h:110: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/iconsource.h:110: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/iconsource.h:121: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/iconsource.h:121: error: template argument 1 is invalid
+In file included from /usr/include/gtkmm-2.4/gtkmm/style.h:45,
+                 from /usr/include/gtkmm-2.4/gtkmm/rc.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/widget.h:47,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/iconset.h:90: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/iconset.h:90: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/iconset.h:119: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/iconset.h:119: error: template argument 1 is invalid
+In file included from /usr/include/gtkmm-2.4/gtkmm/rc.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/widget.h:47,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/style.h:119: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:119: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:120: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:120: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:120: error: expected ‘;’ before ‘get_fg’
+/usr/include/gtkmm-2.4/gtkmm/style.h:122: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:122: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:123: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:123: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:123: error: expected ‘;’ before ‘get_bg’
+/usr/include/gtkmm-2.4/gtkmm/style.h:125: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:125: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:126: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:126: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:126: error: expected ‘;’ before ‘get_light’
+/usr/include/gtkmm-2.4/gtkmm/style.h:128: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:128: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:129: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:129: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:129: error: expected ‘;’ before ‘get_dark’
+/usr/include/gtkmm-2.4/gtkmm/style.h:131: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:131: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:132: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:132: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:132: error: expected ‘;’ before ‘get_mid’
+/usr/include/gtkmm-2.4/gtkmm/style.h:134: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:134: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:135: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:135: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:135: error: expected ‘;’ before ‘get_text’
+/usr/include/gtkmm-2.4/gtkmm/style.h:137: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:137: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:138: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:138: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:138: error: expected ‘;’ before ‘get_base’
+/usr/include/gtkmm-2.4/gtkmm/style.h:140: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:140: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:141: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:141: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:141: error: expected ‘;’ before ‘get_text_aa’
+/usr/include/gtkmm-2.4/gtkmm/style.h:144: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:144: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:145: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:145: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:145: error: expected ‘;’ before ‘get_black’
+/usr/include/gtkmm-2.4/gtkmm/style.h:146: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:146: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:147: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:147: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:147: error: expected ‘;’ before ‘get_white’
+/usr/include/gtkmm-2.4/gtkmm/style.h:160: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:160: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:161: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:161: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:163: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:163: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:164: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:164: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:166: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:166: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:167: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:167: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:169: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:169: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:170: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:170: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:172: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:172: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:173: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:173: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:175: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:175: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:176: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:176: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:178: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:178: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:179: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:179: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:181: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:181: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:182: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:182: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:183: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:183: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:184: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:184: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:190: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:190: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:190: error: expected ‘;’ before ‘get_background’
+/usr/include/gtkmm-2.4/gtkmm/style.h:194: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:194: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:198: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:198: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:202: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:202: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:202: error: ‘void Gtk::Style::set_bg_pixmap(Gtk::StateType, const int&)’ cannot be overloaded
+/usr/include/gtkmm-2.4/gtkmm/style.h:198: error: with ‘void Gtk::Style::set_bg_pixmap(Gtk::StateType, const int&)’
+/usr/include/gtkmm-2.4/gtkmm/style.h:204: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:204: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:205: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:205: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:225: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:225: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:228: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:228: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:253: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:253: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:256: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:256: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:283: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:283: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:286: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:286: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:313: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:313: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:316: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:316: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:340: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:340: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:343: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:343: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:367: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:367: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:370: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:370: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:394: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:394: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:397: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:397: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:420: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:420: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:422: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:422: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:446: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:446: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:449: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:449: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:472: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:472: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:474: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:474: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:497: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:497: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:500: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:500: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:509: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:509: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:512: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:512: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:534: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:534: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:537: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:537: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:565: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:565: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:568: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:568: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:596: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:596: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:599: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:599: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:624: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:624: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:627: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:627: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:649: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:649: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:651: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:651: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:681: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:681: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:683: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:683: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:705: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:705: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:708: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:708: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:731: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:731: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:733: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:733: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:766: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:766: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:779: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:779: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:784: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:784: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:785: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:785: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:810: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/style.h:810: error: expected ‘,’ or ‘...’ before ‘&’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:826: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:826: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:881: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:881: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:886: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:886: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:890: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:890: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:890: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:890: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:894: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:894: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:894: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:894: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:898: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:898: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:898: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:898: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:902: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:902: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:902: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:902: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:906: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:906: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:906: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:906: error: expected ‘,’ or ‘...’ before ‘::’ token
+In file included from /usr/include/gtkmm-2.4/gtkmm/rc.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/widget.h:47,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/style.h:910: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:910: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:910: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:910: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:914: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:914: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:914: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:914: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:918: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:918: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:918: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:918: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:922: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:922: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:922: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:922: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:926: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:926: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:926: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:926: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:930: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:930: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:930: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:930: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:934: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:934: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:934: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:934: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:938: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:938: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:938: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:938: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:942: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:942: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:942: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:942: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:946: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:946: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:946: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:946: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:950: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:950: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:950: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:950: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:954: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:954: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:954: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:954: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:958: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:958: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:958: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:958: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:962: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:962: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:962: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:962: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:966: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:966: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:966: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:966: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/style.h:970: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/style.h:970: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/style.h:970: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/style.h:970: error: expected ‘,’ or ‘...’ before ‘::’ token
+In file included from /usr/include/gtkmm-2.4/gtkmm/widget.h:47,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/rc.h:195: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/rc.h:195: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/rc.h:196: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/rc.h:196: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/rc.h:196: error: expected ‘;’ before ‘get_fg’
+/usr/include/gtkmm-2.4/gtkmm/rc.h:198: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/rc.h:198: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/rc.h:199: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/rc.h:199: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/rc.h:199: error: expected ‘;’ before ‘get_bg’
+/usr/include/gtkmm-2.4/gtkmm/rc.h:201: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/rc.h:201: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/rc.h:202: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/rc.h:202: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/rc.h:202: error: expected ‘;’ before ‘get_text’
+/usr/include/gtkmm-2.4/gtkmm/rc.h:204: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/rc.h:204: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/rc.h:205: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/rc.h:205: error: ISO C++ forbids declaration of ‘Color’ with no type
+/usr/include/gtkmm-2.4/gtkmm/rc.h:205: error: expected ‘;’ before ‘get_base’
+In file included from /usr/include/gtkmm-2.4/gtkmm/clipboard.h:33,
+                 from /usr/include/gtkmm-2.4/gtkmm/widget.h:49,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:131: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:131: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:141: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:141: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:151: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:151: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:209: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:209: error: ISO C++ forbids declaration of ‘ArrayHandle_AtomString’ with no type
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:209: error: expected ‘;’ before ‘get_targets’
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:230: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:230: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:237: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/selectiondata.h:237: error: template argument 1 is invalid
+In file included from /usr/include/gtkmm-2.4/gtkmm/widget.h:49,
+                 from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:176: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:176: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:184: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:184: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:191: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:191: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:260: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:260: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:335: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:335: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:335: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:417: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/clipboard.h:417: error: template argument 1 is invalid
+In file included from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/widget.h:303: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:303: error: expected initializer before ‘Allocation’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:392: error: ‘Allocation’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:431: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:431: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:432: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:432: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:433: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:433: error: template argument 1 is invalid
+In file included from /usr/include/gtkmm-2.4/gtkmm/container.h:29,
+                 from /usr/include/gtkmm-2.4/gtkmm/bin.h:30,
+                 from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/widget.h:434: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:434: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:435: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:435: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:436: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:436: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:437: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:437: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:438: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:438: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:442: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:442: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:592: error: ISO C++ forbids declaration of ‘Allocation’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:592: error: expected ‘,’ or ‘...’ before ‘&’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:610: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:610: error: expected ‘,’ or ‘...’ before ‘accel_mods’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:621: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:621: error: expected ‘,’ or ‘...’ before ‘accel_mods’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:715: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:715: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:725: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:725: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:725: error: ‘bool Gtk::Widget::intersect(int) const’ cannot be overloaded
+/usr/include/gtkmm-2.4/gtkmm/widget.h:715: error: with ‘bool Gtk::Widget::intersect(int) const’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:741: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:741: error: ISO C++ forbids declaration of ‘Region’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:741: error: expected ‘;’ before ‘region_intersect’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1196: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1196: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1204: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1204: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1211: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1211: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1216: error: ‘Allocation’ does not name a type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1225: error: ISO C++ forbids declaration of ‘Allocation’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1225: error: expected ‘,’ or ‘...’ before ‘&’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1242: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1242: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1247: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1247: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1252: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1252: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1398: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1398: error: expected ‘,’ or ‘...’ before ‘events’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1404: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1404: error: expected ‘,’ or ‘...’ before ‘events’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1410: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1410: error: expected ‘,’ or ‘...’ before ‘mode’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1417: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1417: error: ISO C++ forbids declaration of ‘ExtensionMode’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1417: error: expected ‘;’ before ‘get_extension_events’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1512: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1512: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1518: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1518: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1533: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1533: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1547: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1547: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1573: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1573: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1586: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1586: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1601: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1601: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1615: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1615: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1697: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1697: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1697: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1697: error: expected ‘,’ or ‘...’ before ‘&’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1718: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1718: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1748: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1748: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1755: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1755: error: ISO C++ forbids declaration of ‘EventMask’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1755: error: expected ‘;’ before ‘get_events’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1897: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1897: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1907: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1907: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1922: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1922: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1934: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1934: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1948: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:1948: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2045: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2045: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2078: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2078: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2119: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2119: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2130: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2130: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2136: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2136: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2197: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2197: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2209: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2209: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2286: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2286: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2290: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2290: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2298: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2298: error: expected ‘,’ or ‘...’ before ‘actions’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2299: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2299: error: expected ‘,’ or ‘...’ before ‘actions’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2302: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2302: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2302: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2302: error: expected ‘,’ or ‘...’ before ‘protocol’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2317: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2317: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2318: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2318: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2374: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2374: error: expected ‘,’ or ‘...’ before ‘start_button_mask’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2388: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2388: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2388: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2388: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2388: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2388: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2395: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2395: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2458: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2458: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2458: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2458: error: expected ‘,’ or ‘...’ before ‘actions’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2473: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2473: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2474: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2474: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2537: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2537: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2537: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2537: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2848: error: ‘Allocation’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2848: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3236: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3236: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3236: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3249: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3249: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3249: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3266: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3266: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3266: error: wrong number of template arguments (2, should be 5)
+/usr/include/glibmm-2.4/glibmm/signalproxy.h:282: error: provided for ‘template<class R, class P1, class P2, class P3, class P4> class Glib::SignalProxy4’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3280: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3280: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3280: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3288: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3288: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3288: error: wrong number of template arguments (2, should be 3)
+/usr/include/glibmm-2.4/glibmm/signalproxy.h:206: error: provided for ‘template<class R, class P1, class P2> class Glib::SignalProxy2’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3302: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3302: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3302: error: wrong number of template arguments (2, should be 3)
+/usr/include/glibmm-2.4/glibmm/signalproxy.h:206: error: provided for ‘template<class R, class P1, class P2> class Glib::SignalProxy2’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3330: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3330: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3330: error: wrong number of template arguments (2, should be 5)
+/usr/include/glibmm-2.4/glibmm/signalproxy.h:282: error: provided for ‘template<class R, class P1, class P2, class P3, class P4> class Glib::SignalProxy4’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3352: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3352: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3352: error: wrong number of template arguments (2, should be 5)
+/usr/include/glibmm-2.4/glibmm/signalproxy.h:282: error: provided for ‘template<class R, class P1, class P2, class P3, class P4> class Glib::SignalProxy4’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3377: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3377: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3377: error: wrong number of template arguments (2, should be 7)
+/usr/include/glibmm-2.4/glibmm/signalproxy.h:358: error: provided for ‘template<class R, class P1, class P2, class P3, class P4, class P5, class P6> class Glib::SignalProxy6’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3398: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3398: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3398: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3730: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3730: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3740: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3740: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3750: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3750: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3760: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3760: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3830: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3830: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:3830: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2298: error: default argument missing for parameter 2 of ‘void Gtk::Widget::drag_dest_set(Gtk::DestDefaults, int)’
+/usr/include/gtkmm-2.4/gtkmm/widget.h:2299: error: default argument missing for parameter 3 of ‘void Gtk::Widget::drag_dest_set(const Gtk::ArrayHandle_TargetEntry&, Gtk::DestDefaults, int)’
+In file included from /usr/include/gtkmm-2.4/gtkmm/window.h:32,
+                 from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/bin.h:183: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/bin.h:183: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/bin.h:184: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/bin.h:184: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/bin.h:197: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/bin.h:197: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/bin.h:198: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/bin.h:198: error: template argument 1 is invalid
+In file included from ../main.cpp:21:
+/usr/include/gtkmm-2.4/gtkmm/window.h:408: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:408: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:408: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:418: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:418: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:418: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:468: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:468: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:468: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:478: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:478: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:478: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:610: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:610: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:620: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:620: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:738: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:738: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:739: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/window.h:739: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:974: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/window.h:974: error: expected ‘,’ or ‘...’ before ‘hint’
+/usr/include/gtkmm-2.4/gtkmm/window.h:979: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/window.h:979: error: ISO C++ forbids declaration of ‘WindowTypeHint’ with no type
+/usr/include/gtkmm-2.4/gtkmm/window.h:979: error: expected ‘;’ before ‘get_type_hint’
+/usr/include/gtkmm-2.4/gtkmm/window.h:1109: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/window.h:1109: error: expected ‘,’ or ‘...’ before ‘gravity’
+/usr/include/gtkmm-2.4/gtkmm/window.h:1115: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/window.h:1115: error: ISO C++ forbids declaration of ‘Gravity’ with no type
+/usr/include/gtkmm-2.4/gtkmm/window.h:1115: error: expected ‘;’ before ‘get_gravity’
+/usr/include/gtkmm-2.4/gtkmm/window.h:1127: error: ISO C++ forbids declaration of ‘Gdk’ with no type
+/usr/include/gtkmm-2.4/gtkmm/window.h:1127: error: expected ‘,’ or ‘...’ before ‘::’ token
+/usr/include/gtkmm-2.4/gtkmm/window.h:1138: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1138: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1146: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1146: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1153: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/window.h:1153: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1269: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1269: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1269: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1269: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1276: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/window.h:1276: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1276: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1276: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1305: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1305: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1305: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1305: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1328: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1328: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1362: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1362: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1369: error: ISO C++ forbids declaration of ‘type name’ with no type
+/usr/include/gtkmm-2.4/gtkmm/window.h:1369: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1391: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1391: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1391: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1391: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1397: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1397: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1397: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1397: error: template argument 2 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1406: error: ‘Gdk’ was not declared in this scope
+/usr/include/gtkmm-2.4/gtkmm/window.h:1406: error: template argument 1 is invalid
+/usr/include/gtkmm-2.4/gtkmm/window.h:1496: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/window.h:1496: error: expected ‘,’ or ‘...’ before ‘modifier’
+/usr/include/gtkmm-2.4/gtkmm/window.h:1503: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/window.h:1503: error: expected ‘,’ or ‘...’ before ‘modifier’
+/usr/include/gtkmm-2.4/gtkmm/window.h:1511: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/window.h:1511: error: ISO C++ forbids declaration of ‘ModifierType’ with no type
+/usr/include/gtkmm-2.4/gtkmm/window.h:1511: error: expected ‘;’ before ‘get_mnemonic_modifier’
+/usr/include/gtkmm-2.4/gtkmm/window.h:1674: error: ‘Gdk’ has not been declared
+/usr/include/gtkmm-2.4/gtkmm/window.h:1674: error: expected ‘,’ or ‘...’ before ‘edge’
+make: *** [main.o] Error 1

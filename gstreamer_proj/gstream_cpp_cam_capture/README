@@ -1,0 +1,9 @@
+Клиент для распознавания баркодов.
+Сервер можно запустить из командной строки:
+
+gst-launch-0.10 -v v4l2src ! video/x-raw-yuv,width=640,height=480, framerate=30/1 ! videorate ! ffenc_mpeg4 ! rtpmp4vpay mtu=1400 pt=96 ssrc=0 timestamp-offset=0 seqnum-offset=0 send-config=true ! udpsink host=127.0.0.1 port=5000 
+
+если хотим раздавать какому-то одному клиенту, то вставляем udpsink clients=192.168.1.33:5000, где IP:port нужный адрес
+
+П.С.
+Пока лучше запускать сервер из командной строки т.к я в него не добавил videorate, а без него моя камера тормозила передачу при быстрых движения
