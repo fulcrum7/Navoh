@@ -43,7 +43,7 @@ all: gstream_cpp_test
 gstream_cpp_test: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++  -o"gstream_cpp_test" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "gstream_cpp_test" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
