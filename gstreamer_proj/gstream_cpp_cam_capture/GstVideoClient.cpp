@@ -10,20 +10,16 @@
 #include <gst/gstcaps.h>
 #include <gst/app/gstappsink.h>
 #include <iostream>
-#include <memory.h>
 
 using namespace std;
 
 GstVideoClient::GstVideoClient(unsigned int port) :
-		m_Port(port), frame_data_copy(NULL), frame_buffer_size(0)
+		m_Port(port), m_Frame_data_copy(NULL), m_Frame_buffer_size(0)
 {
 }
 
 GstVideoClient::~GstVideoClient()
 {
-	if (frame_data_copy != NULL)
-		delete [] frame_data_copy;
-
 	pipeline->set_state(Gst::STATE_NULL);
 }
 
@@ -104,47 +100,47 @@ void GstVideoClient::Init()
 //	source->link(capsfilter)->link(ffmpegcolorspace1)->link(sink);
 }
 
-//void cleanup(const guint8* v)
-//{
-//	delete [] v;
-//	v = NULL;
-//}
-
 void GstVideoClient::get_frame(Glib::RefPtr<Gdk::Pixbuf>& pixbuf)
 {
 	int width = 0, height = 0;
+	int rowstride;
+	int bits_per_sample;
+	bool has_alpha;
+	unsigned char* data;
+	GstBuffer* gbuf;
+	unsigned int gbuf_size;
 	GstCaps* caps;
+	GstStructure* structure;
 
-	GstBuffer* gbuf = gst_app_sink_pull_buffer((GstAppSink*)sink->gobj());
+	gbuf = gst_app_sink_pull_buffer((GstAppSink*)sink->gobj());
 	if (!gbuf) return;
 
 	caps = gst_buffer_get_caps(gbuf);
 	if (!caps) return;
 
-	GstStructure* structure = gst_caps_get_structure(caps, 0);
+	structure = gst_caps_get_structure(caps, 0);
 	if (structure)
 	{
 		gst_structure_get_int(structure, "width", &width);
 		gst_structure_get_int(structure, "height", &height);
 	}
 
-	if (frame_buffer_size != GST_BUFFER_SIZE(gbuf))
+	gbuf_size = GST_BUFFER_SIZE(gbuf);
+	if (m_Frame_buffer_size != gbuf_size)
 	{
-		frame_buffer_size = GST_BUFFER_SIZE(gbuf);
-		if (frame_data_copy != NULL)
-			delete [] frame_data_copy;
-		frame_data_copy = new unsigned char [frame_buffer_size];
+		m_Frame_buffer_size = gbuf_size;
+		m_Frame_data_copy.reset(new unsigned char [m_Frame_buffer_size]);
 	}
 
-	unsigned char* data = GST_BUFFER_DATA(gbuf);
+	data = GST_BUFFER_DATA(gbuf);
 
-	memcpy(frame_data_copy, data, frame_buffer_size);
+	copy(data, data + m_Frame_buffer_size, m_Frame_data_copy.get());
 
-	int rowstride = width * 3;
-	int bits_per_sample = 8;
-	bool has_alpha = false;
+	rowstride = width * 3;
+	bits_per_sample = 8;
+	has_alpha = false;
 
-	pixbuf = Gdk::Pixbuf::create_from_data(frame_data_copy, Gdk::COLORSPACE_RGB,
+	pixbuf = Gdk::Pixbuf::create_from_data(m_Frame_data_copy.get(), Gdk::COLORSPACE_RGB,
 			has_alpha, bits_per_sample, width, height, rowstride);
 
 	//std::cout << "timestamp: " << GST_BUFFER_TIMESTAMP(gbuf) << endl;
