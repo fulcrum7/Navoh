@@ -10,12 +10,13 @@
 
 #include "GstPlayerBase.h"
 #include <gdkmm.h>
+#include <boost/shared_array.hpp>
 
 class GstVideoClient : public GstPlayerBase
 {
 	unsigned int m_Port;
-	unsigned char* frame_data_copy;
-	unsigned int frame_buffer_size;
+	boost::shared_array<unsigned char> m_Frame_data_copy;
+	unsigned int m_Frame_buffer_size;
 
 	Glib::RefPtr<Gst::Element> source, decoder, rtpdec, capsfilter, ffmpegcolorspace1, ffmpegcolorspace2, sink;
 
