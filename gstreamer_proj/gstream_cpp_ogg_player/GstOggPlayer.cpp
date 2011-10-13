@@ -50,7 +50,7 @@ void GstOggPlayer::Init()
 
 	Glib::RefPtr<Gst::Bus> bus = pipeline->get_bus();
 
-	//bus->add_watch(sigc::mem_fun(*this, &GstPlayerBase::on_bus_Message));
+	bus->add_watch(sigc::mem_fun(*this, &GstPlayerBase::on_bus_Message));
 
 	pipeline->add(source)->add(parser)->add(decoder)->add(conv)->add(sink);
 
