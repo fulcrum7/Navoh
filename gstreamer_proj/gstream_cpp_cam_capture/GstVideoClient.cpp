@@ -72,7 +72,7 @@ void GstVideoClient::Init()
 	caps->set_simple("clock-rate", 90000);
 	caps->set_simple("encoding-name", "MP4V-ES");
 	caps->set_simple("profile-level-id","1");
-	caps->set_simple("config","000001b001000001b58913000001000000012000c48d8800f514043c1463000001b24c61766335322e32302e31");
+	//caps->set_simple("config", "000001b001000001b58913000001000000012000c48d8800f514043c1463000001b24c61766335322e32302e31");
 	caps->set_simple("payload",96);
 	caps->set_simple("ssrc", 0);
 	caps->set_simple("clock-base", 0);

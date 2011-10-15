@@ -4,12 +4,18 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../GstOggPlayer.cpp \
+../GstPlayerBase.cpp \
 ../main.cpp 
 
 OBJS += \
+./GstOggPlayer.o \
+./GstPlayerBase.o \
 ./main.o 
 
 CPP_DEPS += \
+./GstOggPlayer.d \
+./GstPlayerBase.d \
 ./main.d 
 
 
