@@ -55,7 +55,7 @@ public:
 
 		vector<Gdk::Point> rect;
 		string str;
-		decode_barcode(pixbuf, rect, str, 50);
+		decode_barcode(pixbuf, rect, str, 500);
 
 		if (!rect.empty())
 		{
