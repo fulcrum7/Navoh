@@ -49,9 +49,8 @@ public:
 
 		vc.get_frame(pixbuf);
 
-		drawable->draw_rgb_image(get_style()->get_bg_gc(Gtk::STATE_NORMAL),
-				0, 0, pixbuf->get_width(), pixbuf->get_height(),
-				Gdk::RGB_DITHER_MAX, (unsigned char*)pixbuf->get_pixels(), pixbuf->get_width() * 3);
+		drawable->draw_pixbuf(get_style()->get_bg_gc(Gtk::STATE_NORMAL), pixbuf, 0, 0, 0, 0,
+				-1 , -1, Gdk::RGB_DITHER_NONE, 0, 0);
 
 		vector<Gdk::Point> rect;
 		string str;
