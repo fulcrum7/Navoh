@@ -597,9 +597,7 @@ main.d main.o: ../main.cpp /usr/include/gtkmm-2.4/gtkmm/window.h \
  /usr/include/gdkmm-2.4/gdkmm/pixbufanimationiter.h \
  /usr/include/giomm-2.4/giomm/icon.h /usr/include/gtkmm-2.4/gtkmm/main.h \
  /usr/include/gtkmm-2.4/gtkmm/drawingarea.h \
- /usr/include/gtkmm-2.4/gtkmm/box.h /usr/include/pangomm-1.4/pangomm.h \
- /usr/include/cairomm-1.0/cairomm/cairomm.h \
- /usr/lib/cairomm-1.0/include/cairommconfig.h \
+ /usr/include/gtkmm-2.4/gtkmm/box.h \
  /usr/include/gstreamermm-0.10/gstreamermm.h \
  /usr/include/gstreamermm-0.10/gstreamermm/init.h \
  /usr/include/gstreamermm-0.10/gstreamermm/version.h \
@@ -2180,12 +2178,6 @@ main.d main.o: ../main.cpp /usr/include/gtkmm-2.4/gtkmm/window.h \
 /usr/include/gtkmm-2.4/gtkmm/drawingarea.h:
 
 /usr/include/gtkmm-2.4/gtkmm/box.h:
-
-/usr/include/pangomm-1.4/pangomm.h:
-
-/usr/include/cairomm-1.0/cairomm/cairomm.h:
-
-/usr/lib/cairomm-1.0/include/cairommconfig.h:
 
 /usr/include/gstreamermm-0.10/gstreamermm.h:
 
