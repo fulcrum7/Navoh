@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 
 	GstOggPlayer player1;
 	player1.SetFile(argv[1]);
-    player1.Init();
+   	player1.Init();
 	player1.Play();
 
 	mainloop->run();
