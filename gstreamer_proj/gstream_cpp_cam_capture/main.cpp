@@ -24,9 +24,58 @@
 #include <string>
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
-
+#include <boost/lexical_cast.hpp>
+#include "math.h"
 using namespace std;
 using namespace boost;
+
+
+/*
+*   Class for distance measurin and orientation
+*	TODO: replace it to the place you love
+*/
+
+class DataMtxPlace
+{
+	int ImageWidth;
+	int ImageHeight;					//		B-----------C
+	double Ax, Ay, Bx, By;				//		|	        |
+	double Cx, Cy, Dx, Dy;				//      A---------- D
+
+public:
+	DataMtxPlace(int width, int height,
+			double inAx, double inAy,
+			double inBx, double inBy,
+			double inCx, double inCy,
+			double inDx, double inDy) :
+			ImageWidth(width), ImageHeight(height),
+			Ax(inAx), Ay(inAy), Bx(inBx), By(inBy),
+			Cx(inCx), Cy(inCy), Dx(inDx), Dy(inDy){}
+
+	double calcDistance()  // approximetely dist to Mtx code
+	{
+		double div, dst;
+		div = ImageHeight * ImageWidth / calcSquare();
+		dst = sqrt(div / 7.9);
+		return dst;
+	}
+	double calcDirection()	// returns from -10 (left) to +10 right
+	{
+		double midX = (Ax + Cx) / 2;
+		double direction = (midX - ImageWidth / 2) / (ImageWidth / 2) * 10;
+		return direction;
+	}
+	double calcSquare()
+	{
+		double d1, d2, d;
+		double square;
+		d1 = sqrt(pow(Ax - Cx, 2) + pow(Ay - Cy, 2));
+		d2 = sqrt(pow(Bx - Dx, 2) + pow(By - Dy, 2));
+		d = max(d1, d2);
+		square = pow(d, 2) / 2;
+		return square;
+	}
+};
 
 class VideoWidget : public Gtk::DrawingArea
 {
@@ -55,7 +104,7 @@ public:
 		Gdk::Point rect[4], barcode_center;
 		string str;
 
-		bool res = decode_barcode(pixbuf, rect, str, 50);
+		bool res = decode_barcode(pixbuf, rect, str, 500);
 
 		if (res)
 		{
@@ -71,13 +120,28 @@ public:
 			cr->line_to(rect[0].get_x(), rect[0].get_y());
 			cr->stroke();
 
+			DataMtxPlace distance(get_width(), get_height(),
+					rect[0].get_x(), rect[0].get_y(),
+					rect[1].get_x(), rect[1].get_y(),
+					rect[2].get_x(), rect[2].get_y(),
+					rect[3].get_x(), rect[3].get_y());
+
+			cout << "Distance: " << distance.calcDistance() <<
+					"\tSquare: " <<  distance.calcSquare() <<
+					"\tDirection: " << distance.calcDirection() << endl;
+
 			Glib::RefPtr<Pango::Layout> pango_layout = Pango::Layout::create(cr);
 
 			Pango::FontDescription desc("Arial Rounded MT Bold");
 			desc.set_size(14 * PANGO_SCALE);
-
 			pango_layout->set_font_description(desc);
-			pango_layout->set_text(str);
+			pango_layout->set_alignment(Pango::ALIGN_CENTER);
+
+			string text = "Msg: " + str + "\nDist: " +
+					lexical_cast<string>(distance.calcDistance()) + "\nDir: " +
+					lexical_cast<string>(distance.calcDirection());
+
+			pango_layout->set_text(text);
 
 			Gdk::Point* max_x, *min_x, *max_y, *min_y;
 			boost::function<bool (Gdk::Point, Gdk::Point)> compare;
@@ -93,7 +157,6 @@ public:
 			barcode_center = Gdk::Point(
 					(max_x->get_x() + min_x->get_x()) / 2,
 					(max_y->get_y() + min_y->get_y()) / 2);
-
 
 			const Pango::Rectangle extent = pango_layout->get_pixel_logical_extents();
 
@@ -114,7 +177,6 @@ public:
 //
 //			cr->rectangle(i * get_width() / 3,  0, i * get_width() / 3 + get_width() / 3, get_height());
 //			cr->fill_preserve();
-
 		}
 
 //		cr->set_source_rgba(0, 0, 0, 0.6);
@@ -147,7 +209,7 @@ public:
 					DmtxMessage *msg = dmtxDecodeMatrixRegion(dec, reg, DmtxUndefined);
 					if (msg)
 					{
-						str.assign(msg->output, msg->output + msg->outputSize);
+						str.assign(msg->output, msg->output + msg->outputIdx);
 						std::cout << "Output: " << msg->output << " Output index: " << msg->outputIdx << '\n';
 						dmtxMessageDestroy(&msg);
 						ret = true;
