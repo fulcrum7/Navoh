@@ -24,9 +24,58 @@
 #include <string>
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
-
+#include <boost/lexical_cast.hpp>
+#include "math.h"
 using namespace std;
 using namespace boost;
+
+
+/*
+*   Class for distance measurin and orientation
+*	TODO: replace it to the place you love
+*/
+
+class DataMtxPlace
+{
+	int ImageWidth;
+	int ImageHeight;					//		B-----------C
+	double Ax, Ay, Bx, By;				//		|	        |
+	double Cx, Cy, Dx, Dy;				//      A---------- D
+
+public:
+	DataMtxPlace(int width, int height,
+			double inAx, double inAy,
+			double inBx, double inBy,
+			double inCx, double inCy,
+			double inDx, double inDy) :
+			ImageWidth(width), ImageHeight(height),
+			Ax(inAx), Ay(inAy), Bx(inBx), By(inBy),
+			Cx(inCx), Cy(inCy), Dx(inDx), Dy(inDy){}
+
+	double calcDistance()  // approximetely dist to Mtx code
+	{
+		double div, dst;
+		div = ImageHeight * ImageWidth / calcSquare();
+		dst = sqrt(div / 7.9);
+		return dst;
+	}
+	double calcDirection()	// returns from -10 (left) to +10 right
+	{
+		double midX = (Ax + Cx) / 2;
+		double direction = (midX - ImageWidth / 2) / (ImageWidth / 2) * 10;
+		return direction;
+	}
+	double calcSquare()
+	{
+		double d1, d2, d;
+		double square;
+		d1 = sqrt(pow(Ax - Cx, 2) + pow(Ay - Cy, 2));
+		d2 = sqrt(pow(Bx - Dx, 2) + pow(By - Dy, 2));
+		d = max(d1, d2);
+		square = pow(d, 2) / 2;
+		return square;
+	}
+};
 
 class VideoWidget : public Gtk::DrawingArea
 {
@@ -49,16 +98,18 @@ public:
 
 		vc.get_frame(pixbuf);
 
-		drawable->draw_pixbuf(get_style()->get_bg_gc(Gtk::STATE_NORMAL), pixbuf, 0, 0, 0, 0,
-				-1 , -1, Gdk::RGB_DITHER_NONE, 0, 0);
+		drawable->draw_pixbuf(get_style()->get_bg_gc(Gtk::STATE_NORMAL), pixbuf,
+				0, 0, 0, 0, -1 , -1, Gdk::RGB_DITHER_NONE, 0, 0);
 
-		vector<Gdk::Point> rect;
+		Gdk::Point rect[4], barcode_center;
 		string str;
-		decode_barcode(pixbuf, rect, str, 500);
 
-		if (!rect.empty())
+		bool res = decode_barcode(pixbuf, rect, str, 500);
+
+		if (res)
 		{
 			Cairo::RefPtr<Cairo::Context> cr = drawable->create_cairo_context();
+
 			cr->set_line_width(3);
 			cr->set_source_rgb(1, 0.0, 0.0);
 
@@ -67,46 +118,81 @@ public:
 			cr->line_to(rect[2].get_x(), rect[2].get_y());
 			cr->line_to(rect[3].get_x(), rect[3].get_y());
 			cr->line_to(rect[0].get_x(), rect[0].get_y());
+			cr->stroke();
+
+			DataMtxPlace distance(get_width(), get_height(),
+					rect[0].get_x(), rect[0].get_y(),
+					rect[1].get_x(), rect[1].get_y(),
+					rect[2].get_x(), rect[2].get_y(),
+					rect[3].get_x(), rect[3].get_y());
+
+			cout << "Distance: " << distance.calcDistance() <<
+					"\tSquare: " <<  distance.calcSquare() <<
+					"\tDirection: " << distance.calcDirection() << endl;
 
 			Glib::RefPtr<Pango::Layout> pango_layout = Pango::Layout::create(cr);
 
 			Pango::FontDescription desc("Arial Rounded MT Bold");
 			desc.set_size(14 * PANGO_SCALE);
-
 			pango_layout->set_font_description(desc);
-			pango_layout->set_text(str);
+			pango_layout->set_alignment(Pango::ALIGN_CENTER);
 
-			vector<Gdk::Point>::iterator max_x, min_x, max_y, min_y;
+			string text = "Msg: " + str + "\nDist: " +
+					lexical_cast<string>(distance.calcDistance()) + "\nDir: " +
+					lexical_cast<string>(distance.calcDirection());
+
+			pango_layout->set_text(text);
+
+			Gdk::Point* max_x, *min_x, *max_y, *min_y;
 			boost::function<bool (Gdk::Point, Gdk::Point)> compare;
 
 			compare = bind(less<int>(), bind(&Gdk::Point::get_x, _1), bind(&Gdk::Point::get_x, _2));
-			max_x = max_element(rect.begin(), rect.end(), compare);
-			min_x =	min_element(rect.begin(), rect.end(), compare);
+			max_x = max_element(rect, rect + 4, compare);
+			min_x =	min_element(rect, rect + 4, compare);
 
 			compare = bind(less<int>(), bind(&Gdk::Point::get_y, _1), bind(&Gdk::Point::get_y, _2));
-			max_y = max_element(rect.begin(), rect.end(), compare);
-			min_y =	min_element(rect.begin(), rect.end(), compare);
+			max_y = max_element(rect, rect + 4, compare);
+			min_y =	min_element(rect, rect + 4, compare);
 
-			int text_pos_x = (max_x->get_x() + min_x->get_x()) / 2;
-			int text_pos_y = (max_y->get_y() + min_y->get_y()) / 2;
+			barcode_center = Gdk::Point(
+					(max_x->get_x() + min_x->get_x()) / 2,
+					(max_y->get_y() + min_y->get_y()) / 2);
 
 			const Pango::Rectangle extent = pango_layout->get_pixel_logical_extents();
 
-			text_pos_x -= extent.get_width() / 2;
-			text_pos_y -= extent.get_height() / 2;
-
-			cr->move_to(text_pos_x, text_pos_y);
+			cr->move_to(barcode_center.get_x() - extent.get_width() / 2,
+					barcode_center.get_y() - extent.get_height() / 2);
 
 			pango_layout->show_in_cairo_context(cr);
-			cr->stroke();
+
+//			cr->set_source_rgba(0, 0, 0, 0.6);
+//
+//			int i = 0;
+//			if (center_barcode.get_x() < get_width() / 3)
+//				i = 0;
+//			else if (center_barcode.get_x() > (2 * get_width() / 3))
+//				i = 2;
+//			else
+//				i = 1;
+//
+//			cr->rectangle(i * get_width() / 3,  0, i * get_width() / 3 + get_width() / 3, get_height());
+//			cr->fill_preserve();
 		}
+
+//		cr->set_source_rgba(0, 0, 0, 0.6);
+//		cr->move_to(get_width() / 3, 0);
+//		cr->line_to(get_width() / 3, get_height());
+//		cr->move_to(2 * get_width() / 3, 0);
+//		cr->line_to(2 * get_width() / 3, get_height());
+//		cr->stroke();
+
 		return true;
 	}
 
-	void decode_barcode(Glib::RefPtr<Gdk::Pixbuf>& pixbuf, std::vector<Gdk::Point>& rect, string& str, long timeout_msec = 0)
+	bool decode_barcode(Glib::RefPtr<Gdk::Pixbuf>& pixbuf, Gdk::Point rect[4], string& str, long timeout_msec = 0)
 	{
 		DmtxImage* img = dmtxImageCreate(pixbuf->get_pixels(), pixbuf->get_width(), pixbuf->get_height(), DmtxPack24bppRGB);
-
+		bool ret = false;
 		if (img)
 		{
 		    DmtxVector2 p00, p10, p11, p01;
@@ -123,9 +209,10 @@ public:
 					DmtxMessage *msg = dmtxDecodeMatrixRegion(dec, reg, DmtxUndefined);
 					if (msg)
 					{
-						str.assign(msg->output, msg->output + msg->outputSize);
+						str.assign(msg->output, msg->output + msg->outputIdx);
 						std::cout << "Output: " << msg->output << " Output index: " << msg->outputIdx << '\n';
 						dmtxMessageDestroy(&msg);
+						ret = true;
 					}
 					p00.X = p00.Y = p10.Y = p01.X = 0.0;
 					p10.X = p01.Y = p11.X = p11.Y = 1.0;
@@ -135,14 +222,14 @@ public:
 					dmtxMatrix3VMultiplyBy(&p11, reg->fit2raw);
 					dmtxMatrix3VMultiplyBy(&p01, reg->fit2raw);
 
-					rect.push_back(Gdk::Point((unsigned int)(p00.X + 0.5),
-						(unsigned int)(get_height() - 1 - (int)(p00.Y + 0.5))));
-					rect.push_back(Gdk::Point((unsigned int)(p01.X + 0.5),
-						(unsigned int)(get_height() - 1 - (int)(p01.Y + 0.5))));
-					rect.push_back(Gdk::Point((unsigned int)(p11.X + 0.5),
-						(unsigned int)(get_height() - 1 - (int)(p11.Y + 0.5))));
-					rect.push_back(Gdk::Point((unsigned int)(p10.X + 0.5),
-						(unsigned int)(get_height() - 1 - (int)(p10.Y + 0.5))));
+					rect[0] = Gdk::Point((unsigned int)(p00.X + 0.5),
+						(unsigned int)(get_height() - 1 - (int)(p00.Y + 0.5)));
+					rect[1] = Gdk::Point((unsigned int)(p01.X + 0.5),
+						(unsigned int)(get_height() - 1 - (int)(p01.Y + 0.5)));
+					rect[2] = Gdk::Point((unsigned int)(p11.X + 0.5),
+						(unsigned int)(get_height() - 1 - (int)(p11.Y + 0.5)));
+					rect[3] = Gdk::Point((unsigned int)(p10.X + 0.5),
+						(unsigned int)(get_height() - 1 - (int)(p10.Y + 0.5)));
 
 					dmtxRegionDestroy(&reg);
 				}
@@ -150,8 +237,8 @@ public:
 			}
 			dmtxImageDestroy(&img);
 		}
+		return ret;
 	}
-
 };
 
 
@@ -203,7 +290,8 @@ bool HelloWorld::on_timer_update_image()
 
 void HelloWorld::on_button_clicked()
 {
-	std::cout << "on_button_click" << std::endl;
+	cout << "on_button_click" << endl;
+	cout << m_VW.get_width() << " " << m_VW.get_height() << endl;
 }
 
 int main(int argc, char **argv)
