@@ -24,9 +24,125 @@
 #include <string>
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
-
+#include "math.h"
 using namespace std;
 using namespace boost;
+
+
+/*
+*   Class for distance measurin and orientation
+*	TODO: replace it to the place you love
+*/
+
+class DataMtxPlace
+{
+	private:
+	double ImageWidth;					// size in pixels
+	double ImageHeight;
+	double Ax,Bx,Cx,Dx;
+	double Ay,By,Cy,Dy;              	/*
+									*		A-----------B
+									*		|	        |
+									*       D---------- C 
+	 								*/
+
+	int *check;
+	public:
+	DataMtxPlace()
+	{
+		check = new int[6];
+		for(int i=0;i<6;i++)
+		{
+			check[i]=0;
+		}	
+	}
+	virtual ~DataMtxPlace()
+	{
+		delete [] check;
+	}
+	int do_checks()
+	{
+		int sum=1;
+		for(int i=0;i<5;i++)
+		{
+			sum&=check[i];
+		}
+		check[6]=sum;
+	}
+	void setA(double x,double y)
+	{
+		Ax=x;
+		Ay=y;
+		check[0]=1;
+	}
+	void setB(double x,double y)
+	{
+		Bx=x;
+		By=y;
+	    check[1]=1;
+	}
+	void setC(double x,double y)
+	{
+		Cx=x;
+		Cy=y;
+		check[2]=1;
+	}
+	void setD(double x,double y)
+	{
+		Dx=x;
+		Dy=y;
+		check[3]=1;
+
+	}
+	void setImgSize(double width,double height)
+	{
+		ImageWidth=width;
+		ImageHeight=height;
+		check[4]=1;	
+	}
+	double calcDistance()  // approximetely dist to Mtx code
+	{
+		double div;
+
+		if (check[6]==0) return 0;
+		div=ImageHeight*ImageLength/calcSquare();
+				
+		/*we should use special function*/
+		return div;
+
+	}
+	double calcDirection()	// returns from -10 (left) to +10 right
+	{
+		if (check[6]==0) return 0;
+		double midX=(Bx+Dx)/2;
+		double direction=(midX-ImageWidth/2)/(ImageWidth/2)*10;
+		return direction;
+
+	}
+	double calcSquare()
+	{
+
+		if (check[6]==0) return 0;
+		double d1,d2,d;
+		double square;
+		d1=sqrt(pow(Dx-Bx,2)+pow(Dy-By,2));
+		d2=sqrt(pow(Ax-Cx,2)+pow(Ay-Cy,2));
+		d=(d1>d2)?d1:d2;
+		square=pow(d,2)/2;
+		return square;
+
+	} 
+
+}
+
+
+
+
+
+
+
+
+
 
 class VideoWidget : public Gtk::DrawingArea
 {
